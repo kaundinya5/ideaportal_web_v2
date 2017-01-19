@@ -94,17 +94,17 @@ b{
 }
 
 
-.herotext::before {
+.heroimage {
     background-image: url('back.png');
-    background-position: 0 0;
-    background-size: contain;
+    background-position: bottom;
+    background-size: contain ;
     background-repeat: no-repeat;
     position: absolute;
-    width: 60vh;
-    height: 60vh;
+    width: 50vh;
+    height: 50vh;
     content: "";
-    left: -18vw;
-    top: -37.7vh;
+    left: -20vw;
+    bottom: 0;
     padding-top: 66.64%;
     float: left;
 
@@ -149,12 +149,10 @@ b{
         height: 30px !important;
     }
 
-    .herotext::before {
-        width: 60vh;
-        height: 55vh;
-        content: "";
-        left: -30vw;
-        top: -42.5vh;
+    .heroimage {
+        width: 40vh;
+        height: 40vh;
+        bottom: 0;
 
     }
 

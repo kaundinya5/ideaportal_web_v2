@@ -27,6 +27,7 @@
                                     </li>
                                     <li><a href="#about">About Us</a>
                                     </li>
+                                    <li><a href="#Contact">Contact</a>
                                 </ul>
                             </nav>
                             <!-- #primary-menu end -->
@@ -35,15 +36,15 @@
                 </header>
                 <section id="content" class="full-screen with-header  clearfix" style="background: transparent;">
                     <div class="container clearfix nomargin nopadding" style="min-height:100vh; min-width: 100%; background: transparent;">
-                        <div id="simple" style="background: white">
-                            <div id="home" class="step nomargin" data-x="3000" data-rotate-y="270">
+                        <div id="simple" style="background: white z-index:250">
+                            <div id="home" class="step nomargin">
                                 <div class="col_full center nomargin nopadding" style=" display: flex;flex-direction: column;justify-content: space-between; min-height: 50vh;background: white">
                                     <div></div>
                                     <div class="center divcenter row clearfix commonheight leftmargin-sm" style=" ">
-                                        <h2 class=" herotext" style="background: transparent;  font-weight: 200; text-align: left">Long Term Technology <br> <b>Acceleration</b> for Web Products</h2>
+                                        <h2 class=" herotext" style="background: transparent;  font-weight: 200; text-align: left"><div class="heroimage"></div>Long Term Technology <br> <b>Acceleration</b> for Web Products</h2>
                                     </div>
                                 </div>
-                                <div class="col_full center nomargin nopadding" style=" z-index: 0; min-height: 50vh; max-height:50vh; background: #F7F5E9">
+                                <div class="col_full center nomargin nopadding" style=" min-height: 50vh; max-height:50vh; background: #F7F5E9">
                                     <div class="center divcenter row clearfix commonheight " style="background:transparent; margin-top: 4vh">
                                         <a class="button button-large button-border button-rounded tright">Are You A Product Owner?</a>
                                         <a class="button button-large button-dark button-rounded tright">Discover!</a>
@@ -57,7 +58,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="solutions" class="step solution" data-x="3000">
+                            <div id="solutions" class="step solution" data-rotate-x="90">
                                 <div class="col_full center nomargin nopadding" style=" display: flex;flex-direction: column;justify-content: space-between; min-height: 50vh;background: white">
                                     <div></div>
                                     <div class="center divcenter row clearfix commonheight leftmargin-sm" style=" ">
@@ -65,7 +66,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="expertise" class="step" data-x="3000" data-rotate-x="90">
+                            <div id="expertise" class="step" data-rotate-x="90" data-rotate-y="90">
                                 <div class="col_full center nomargin nopadding" style=" display: flex;flex-direction: column;justify-content: space-between; min-height: 50vh;background: white">
                                     <div></div>
                                     <div class="center divcenter row clearfix commonheight leftmargin-sm" style=" ">
@@ -73,7 +74,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="careers" class="step" data-x="3000" data-rotate-x="180">
+                            <div id="careers" class="step" data-rotate-x="90" data-rotate-y="180">
                                 <div class="col_full center nomargin nopadding" style=" display: flex;flex-direction: column;justify-content: space-between; min-height: 50vh;background: white">
                                     <div></div>
                                     <div class="center divcenter row clearfix commonheight leftmargin-sm" style=" ">
@@ -81,7 +82,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="about" class="step" data-x="3000" data-rotate-x="270" data-scale="">
+                            <div id="about" class="step" data-rotate-x="90" data-rotate-y="270">
                                 <div class="col_full center nomargin nopadding" style=" display: flex;flex-direction: column;justify-content: space-between; min-height: 50vh;background: white">
                                     <div></div>
                                     <div class="center divcenter row clearfix commonheight leftmargin-sm" style=" ">
@@ -89,71 +90,78 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div id="footer" class="footer" style="margin-top:95vh;">
-                            <div class="col_full center nomargin nopadding" style="font-size: .9em">
-                                <i>Copyright - IdeaPortal Services Pvt Ltd - 2017</i>
+                            <div id="contact" class="step" data-rotate-x="180">
+                                <div class="col_full center nomargin nopadding" style=" display: flex;flex-direction: column;justify-content: space-between; min-height: 50vh;background: white">
+                                    <div></div>
+                                    <div class="center divcenter row clearfix commonheight leftmargin-sm" style=" ">
+                                        <h2 class=" herotext" style="background: transparent;  font-weight: 200; text-align: left">
+                                        This is the <b>Contact</b> page.<br>Content to be added</h2>
+                                    </div>
+                                </div>
+                                <div id="footer" class="footer" style="margin-top:95vh;">
+                                    <div class="col_full center nomargin nopadding" style="font-size: .9em">
+                                        <i>Copyright - IdeaPortal Services Pvt Ltd - 2017</i>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
                 </section>
-            </div>
-            <%= javascript_include_tag 'jmpress' %>
-                <script>
-                bumbum = 1;
-                setTimeout(function() {
+                </div>
+                <%= javascript_include_tag 'jmpress' %>
+                    <script>
+                    bumbum = 1;
+                    setTimeout(function() {
 
-                    $('#simple').jmpress({
-                        animation: {
-                            transformOrigin: 'center center', // Point on which to transform (unused)
-                            transitionDuration: '2s', // Length of animation
-                            transitionDelay: '500ms', // Delay before animating
-                            transitionTimingFunction: 'ease', // Animation effect
-                            stepSelector: 'p'
-                        },
-                        transitionDuration: 2000 // Set this according to animation.transitionDuration
-                            // It is used for setting the timeout for the transition
-                    });
-
-
-
-
-
-                    $(["home", "solutions", "about", "expertise", "contact"]).each(function() {
-                        console.log(this);
-                        console.log($('#' + this));
-                        var self = this
-
-                        $('#' + this).on('enterStep', function(event) {
-
-
-                            jQuery.expr[":"].Contains = jQuery.expr.createPseudo(function(arg) {
-                                return function(elem) {
-                                    return jQuery(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
-                                };
-                            });
-                            if ($('ul.ip_nav li a:Contains(' + self + ')')[0]) {
-                                $($('ul.ip_nav li a:Contains(' + self + ')')[0]).addClass('selected')
-                            }
-
-                            console.log($('ul.ip_nav li a:Contains(' + self + ')')[0]);
+                        $('#simple').jmpress({
+                            animation: {
+                                transformOrigin: 'center center', // Point on which to transform (unused)
+                                transitionDuration: '2s', // Length of animation
+                                transitionDelay: '500ms', // Delay before animating
+                                transitionTimingFunction: 'ease', // Animation effect
+                                stepSelector: 'p'
+                            },
+                            transitionDuration: 2000 // Set this according to animation.transitionDuration
+                                // It is used for setting the timeout for the transition
                         });
 
-                        $('#' + this).on('leaveStep', function(event) {
 
 
-                            jQuery.expr[":"].Contains = jQuery.expr.createPseudo(function(arg) {
-                                return function(elem) {
-                                    return jQuery(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
-                                };
+
+
+                        $(["home", "solutions", "about", "expertise", "contact"]).each(function() {
+                            console.log(this);
+                            console.log($('#' + this));
+                            var self = this
+
+                            $('#' + this).on('enterStep', function(event) {
+
+
+                                jQuery.expr[":"].Contains = jQuery.expr.createPseudo(function(arg) {
+                                    return function(elem) {
+                                        return jQuery(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+                                    };
+                                });
+                                if ($('ul.ip_nav li a:Contains(' + self + ')')[0]) {
+                                    $($('ul.ip_nav li a:Contains(' + self + ')')[0]).addClass('selected')
+                                }
+
+                                console.log($('ul.ip_nav li a:Contains(' + self + ')')[0]);
                             });
 
-                            if ($('ul.ip_nav li a:Contains(' + self + ')')[0]) {
-                                $($('ul.ip_nav li a:Contains(' + self + ')')[0]).removeClass('selected')
-                            }
+                            $('#' + this).on('leaveStep', function(event) {
+
+
+                                jQuery.expr[":"].Contains = jQuery.expr.createPseudo(function(arg) {
+                                    return function(elem) {
+                                        return jQuery(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+                                    };
+                                });
+
+                                if ($('ul.ip_nav li a:Contains(' + self + ')')[0]) {
+                                    $($('ul.ip_nav li a:Contains(' + self + ')')[0]).removeClass('selected')
+                                }
+                            });
                         });
+
+
                     });
-
-
-                });
-                </script>
+                    </script>
