@@ -17,7 +17,7 @@ body .secondary_cta_container, body .secondary_cta , .ip_nav li a, .ip_nav li a:
     color: #4cb2d8 !important;
 }
 
-.ip_nav li a::before{
+.ip_nav li a:before{
     content: "";
     position: absolute;
     right: 90px;
@@ -104,7 +104,7 @@ b{
     height: 60vh;
     content: "";
     left: -18vw;
-    top: -36.0vh;
+    top: -38.0vh;
 
 }
 
