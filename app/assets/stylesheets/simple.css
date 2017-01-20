@@ -39,7 +39,7 @@ body {
 
 /* fade out inactive slides */
 .step:not(.active) {
-	opacity: 0.3;
+	opacity: 0;
 }
 
 /* hint on the first slide */
@@ -102,12 +102,12 @@ body {
 		display: none;
 	}
 	#simple {
-		width: auto; 
+		width: auto;
 		margin: 0 5%;
-		padding: 0; 
+		padding: 0;
 		border: 0;
 		float: none !important;
-		color: black; 
+		color: black;
 		background: transparent;
 	}
 	.step {
