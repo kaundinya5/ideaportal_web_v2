@@ -13,8 +13,6 @@
                     <div id="header-wrap" style="background:transparent">
                         <div class="container clearfix nomargin nopadding" style="width:100%">
                             <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-                            <!-- Primary Navigation
-                ============================================= -->
                             <nav id="primary-menu">
                                 <ul class="ip_nav" style="display: flex;flex-direction: column; height: 50vh width:200px; ">
                                     <li><a href="#home" class="selected">Home</a>
@@ -27,10 +25,9 @@
                                     </li>
                                     <li><a href="#about">About Us</a>
                                     </li>
-                                    <li><a href="#contact">Contact</a>
+                                    <li><a href="#contact">Contact</a></li>
                                 </ul>
                             </nav>
-                            <!-- #primary-menu end -->
                         </div>
                     </div>
                 </header>
@@ -98,70 +95,73 @@
                                         This is the <b>Contact</b> page.<br>Content to be added</h2>
                                     </div>
                                 </div>
-                                <div id="footer" class="footer" style="margin-top:95vh;">
-                                    <div class="col_full center nomargin nopadding" style="font-size: .9em">
-                                        <i>Copyright - IdeaPortal Services Pvt Ltd - 2017</i>
-                                    </div>
-                                </div>
                             </div>
+                        </div>
+                        <div id="footer" class="footer" style="margin-top:95vh;">
+                            <div class="col_full center nomargin nopadding" style="font-size: .9em">
+                                <i>Copyright - IdeaPortal Services Pvt Ltd - 2017</i>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                </div>
-                <%= javascript_include_tag 'jmpress' %>
-                    <script>
-                    bumbum = 1;
-                    setTimeout(function() {
+            </div>
+        </body>
+        <%= javascript_include_tag 'jmpress' %>
+            <script>
+            bumbum = 1;
+            setTimeout(function() {
 
-                        $('#simple').jmpress({
-                            animation: {
-                                transformOrigin: 'center center', // Point on which to transform (unused)
-                                transitionDuration: '2s', // Length of animation
-                                transitionDelay: '500ms', // Delay before animating
-                                transitionTimingFunction: 'ease', // Animation effect
-                                stepSelector: 'p'
-                            },
-                            transitionDuration: 2000 // Set this according to animation.transitionDuration
-                                // It is used for setting the timeout for the transition
+                $('#simple').jmpress({
+                    animation: {
+                        transformOrigin: 'center center', // Point on which to transform (unused)
+                        transitionDuration: '2s', // Length of animation
+                        transitionDelay: '500ms', // Delay before animating
+                        transitionTimingFunction: 'ease', // Animation effect
+                        stepSelector: 'p'
+                    },
+                    transitionDuration: 2000 // Set this according to animation.transitionDuration
+                        // It is used for setting the timeout for the transition
+                });
+
+
+
+
+
+                $(["home", "solutions", "about", "expertise", "contact"]).each(function() {
+                    console.log(this);
+                    console.log($('#' + this));
+                    var self = this
+
+                    $('#' + this).on('enterStep', function(event) {
+
+
+                        jQuery.expr[":"].Contains = jQuery.expr.createPseudo(function(arg) {
+                            return function(elem) {
+                                return jQuery(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+                            };
                         });
+                        if ($('ul.ip_nav li a:Contains(' + self + ')')[0]) {
+                            $($('ul.ip_nav li a:Contains(' + self + ')')[0]).addClass('selected')
+                        }
 
-
-
-
-
-                        $(["home", "solutions", "about", "expertise", "contact"]).each(function() {
-                            console.log(this);
-                            console.log($('#' + this));
-                            var self = this
-
-                            $('#' + this).on('enterStep', function(event) {
-
-
-                                jQuery.expr[":"].Contains = jQuery.expr.createPseudo(function(arg) {
-                                    return function(elem) {
-                                        return jQuery(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
-                                    };
-                                });
-                                if ($('ul.ip_nav li a:Contains(' + self + ')')[0]) {
-                                    $($('ul.ip_nav li a:Contains(' + self + ')')[0]).addClass('selected')
-                                }
-
-                                console.log($('ul.ip_nav li a:Contains(' + self + ')')[0]);
-                            });
-
-                            $('#' + this).on('leaveStep', function(event) {
-
-
-                                jQuery.expr[":"].Contains = jQuery.expr.createPseudo(function(arg) {
-                                    return function(elem) {
-                                        return jQuery(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
-                                    };
-                                });
-
-                                if ($('ul.ip_nav li a:Contains(' + self + ')')[0]) {
-                                    $($('ul.ip_nav li a:Contains(' + self + ')')[0]).removeClass('selected')
-                                }
-                            });
-                        });
-
-
+                        console.log($('ul.ip_nav li a:Contains(' + self + ')')[0]);
                     });
-                    </script>
+
+                    $('#' + this).on('leaveStep', function(event) {
+
+
+                        jQuery.expr[":"].Contains = jQuery.expr.createPseudo(function(arg) {
+                            return function(elem) {
+                                return jQuery(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+                            };
+                        });
+
+                        if ($('ul.ip_nav li a:Contains(' + self + ')')[0]) {
+                            $($('ul.ip_nav li a:Contains(' + self + ')')[0]).removeClass('selected')
+                        }
+                    });
+                });
+
+
+            });
+            </script>

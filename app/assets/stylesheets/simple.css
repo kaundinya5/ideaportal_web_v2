@@ -13,6 +13,7 @@ body {
 	font-size: 1em;
 	min-height: 500px;
 	background-color: #F7F5E9;
+	 -webkit-transform-style: preserve-3d;
 
 	display: block;
 
