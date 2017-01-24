@@ -1,5 +1,9 @@
 /** GENERAL **/
+
+
 * {
+	-webkit-transform-style: preserve-3d !important;
+
 	transform-style: preserve-3d !important;
 	-webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -120,6 +124,7 @@ body {
 		display: none;
 	}
 	#simple {
+
 		width: auto;
 		margin: 0 5%;
 		padding: 0;
