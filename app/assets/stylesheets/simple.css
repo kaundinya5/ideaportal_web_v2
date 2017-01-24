@@ -36,11 +36,13 @@ body {
 	-ms-transition:     opacity 1s;
 	-o-transition:      opacity 1s;
 	transition:         opacity 1s;
+pointer-events: auto;
 }
 
 /* fade out inactive slides */
 .step:not(.active) {
 	opacity: 0;
+	pointer-events: none;
 }
 
 /* hint on the first slide */
@@ -70,6 +72,7 @@ body {
 	-ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
 	-o-transition:      opacity 1s,      -o-transform 0.5s 1s;
 	transition:         opacity 1s,         transform 0.5s 1s;
+	pointer-events: none;
 }
 .step-home + .hint {
 	opacity: 1;
@@ -85,6 +88,7 @@ body {
 	-ms-transform:     translateY(0px);
 	-o-transform:      translateY(0px);
 	transform:         translateY(0px);
+	pointer-events: none;
 }
 
 /** NOT SUPPORTED STYLES **/
