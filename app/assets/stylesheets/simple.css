@@ -1,9 +1,21 @@
 /** GENERAL **/
+* {
+	transform-style: preserve-3d !important;
+	-webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  pointer-events: none;
+
+}
 body {
 	font-family: Verdana, sans-serif;
 	min-height: 740px;
 	background-color: white;
-	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.test
+{
+	--webkit-transform: translate3d(0,0,1000px);
+	transform: translate3d(0,0,1000px);
 }
 
 /** STEP STYLES **/
@@ -13,6 +25,7 @@ body {
 	font-size: 1em;
 	min-height: 500px;
 	background-color: #F7F5E9;
+	 -webkit-transform-style: preserve-3d;
 
 	display: block;
 
@@ -38,9 +51,14 @@ body {
 }
 
 /* fade out inactive slides */
-.step:not(.active) {
-	opacity: 0.3;
+.active * {
+	pointer-events: auto !important;
+
 }
+.step:not(.active) {
+		opacity: 0;
+		pointer-events: none;
+	}
 
 /* hint on the first slide */
 .hint {
@@ -102,12 +120,12 @@ body {
 		display: none;
 	}
 	#simple {
-		width: auto; 
+		width: auto;
 		margin: 0 5%;
-		padding: 0; 
+		padding: 0;
 		border: 0;
 		float: none !important;
-		color: black; 
+		color: black;
 		background: transparent;
 	}
 	.step {
@@ -126,6 +144,6 @@ body {
 		transition:         rotate(0deg);
 	}
 	.step:not(.active) {
-		opacity: 1;
+		opacity: 0;
 	}
 }
