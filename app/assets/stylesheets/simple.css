@@ -1,9 +1,21 @@
 /** GENERAL **/
+* {
+	transform-style: preserve-3d !important;
+	-webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  pointer-events: none;
+
+}
 body {
 	font-family: Verdana, sans-serif;
 	min-height: 740px;
 	background-color: white;
-	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.test
+{
+	--webkit-transform: translate3d(0,0,1000px);
+	transform: translate3d(0,0,1000px);
 }
 
 /** STEP STYLES **/
@@ -36,14 +48,17 @@ body {
 	-ms-transition:     opacity 1s;
 	-o-transition:      opacity 1s;
 	transition:         opacity 1s;
-pointer-events: auto;
 }
 
 /* fade out inactive slides */
-.step:not(.active) {
-	opacity: 0;
-	pointer-events: none;
+.active * {
+	pointer-events: auto !important;
+
 }
+.step:not(.active) {
+		opacity: 0;
+		pointer-events: none;
+	}
 
 /* hint on the first slide */
 .hint {
@@ -72,7 +87,6 @@ pointer-events: auto;
 	-ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
 	-o-transition:      opacity 1s,      -o-transform 0.5s 1s;
 	transition:         opacity 1s,         transform 0.5s 1s;
-	pointer-events: none;
 }
 .step-home + .hint {
 	opacity: 1;
@@ -88,7 +102,6 @@ pointer-events: auto;
 	-ms-transform:     translateY(0px);
 	-o-transform:      translateY(0px);
 	transform:         translateY(0px);
-	pointer-events: none;
 }
 
 /** NOT SUPPORTED STYLES **/
@@ -131,6 +144,6 @@ pointer-events: auto;
 		transition:         rotate(0deg);
 	}
 	.step:not(.active) {
-		opacity: 1;
+		opacity: 0;
 	}
 }
