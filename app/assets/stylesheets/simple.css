@@ -1,14 +1,14 @@
 /** GENERAL **/
 
 
-* {
+/** {
 	-webkit-transform-style: preserve-3d !important;
 
 	transform-style: preserve-3d !important;
 	-webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   pointer-events: none;
-
+*/
 }
 body {
 	font-family: Verdana, sans-serif;
@@ -55,10 +55,10 @@ body {
 }
 
 /* fade out inactive slides */
-.active * {
+/*.active *{
 	pointer-events: auto !important;
 
-}
+}*/
 .step:not(.active) {
 		opacity: 0;
 		pointer-events: none;
