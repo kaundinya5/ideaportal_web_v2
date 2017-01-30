@@ -9,6 +9,12 @@
   backface-visibility: hidden;
   pointer-events: none;
 */
+/*}*/
+
+
+.box1{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 }
 body {
 	font-family: Verdana, sans-serif;
@@ -114,7 +120,7 @@ body {
 	-o-transition:      opacity 1s,      -o-transform 0.5s 1s;
 	transition:         opacity 1s,         transform 0.5s 1s;
 }
-.step-home + .hint {
+.step-home  .hint {
 	opacity: 1;
 
 	-webkit-transition: opacity 1s 5s, -webkit-transform 0.5s;
@@ -145,7 +151,7 @@ body {
 	.hint {
 		display: none;
 	}
-	#simple {
+	/*#simple {
 
 		width: auto;
 		margin: 0 5%;
@@ -154,7 +160,7 @@ body {
 		float: none !important;
 		color: black;
 		background: transparent;
-	}
+	}*/
 	.step {
 		page-break-after: always;
 		opacity: 1;

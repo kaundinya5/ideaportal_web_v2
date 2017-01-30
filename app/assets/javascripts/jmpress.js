@@ -1551,7 +1551,7 @@
 
 	/* DEFAULTS */
 	$jmpress('defaults').keyboard = {
-		use: true
+		use: false
 		,keys: {
 			33: jmpressPrev // pg up
 			,37: jmpressPrev // left

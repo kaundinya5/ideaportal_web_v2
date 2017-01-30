@@ -33,8 +33,10 @@
                 </header>
                 <section id="content" class="full-screen with-header  clearfix" style="background: transparent;">
                     <div class="container clearfix nomargin nopadding" style="min-height:100vh; min-width: 100vw; background: transparent;">
+
                         <div id="simple" style="background: white;perspective: 5500px !important;">
-                            <div id="home" class="step nomargin" data-x="3000" data-z="10" data-scale="6">
+
+                            <div id="home" class="step nomargin" data-x="3000" data-z="10" data-scale="30">
                                 <div class="col_full center nomargin nopadding" style=" display: flex;flex-direction: column;justify-content: space-between; min-height: 50vh;background: white">
                                     <div></div>
                                     <div class="center divcenter row clearfix commonheight leftmargin-sm" style=" ">
@@ -56,30 +58,42 @@
                                 </div>
                             </div>
 
-                            <div id="solutionoverview" class="step" data-x="3000" data-rotate-x="90" data-z="10" data-scale="3" data-exclude="true">
-                                <a href="#solutions1" class="topleft">link1</a>
+                            <div id="solutionoverview" class="step" data-x="3000" data-rotate-x="90" data-z="10" data-scale="3" data-exclude="true" style="background: transparent !important; pointer-events: none !important;">
+                                <!-- <a href="#solutions1" class="topleft">link1</a>
                                 <a href="#solutions2" class="topright">link2</a>
                                 <a href="#solutions3" class="bottomleft">link3</a>
-                                <a href="#solutions4" class="bottomright">link4</a>
+                                <a href="#solutions4" class="bottomright">link4</a> -->
                             </div>
 
-                            <div id="solutions" class="step" data-x="3000" data-z="10" data-rotate-x="90" data-scale="6">
+                            <div id="solutions" class="step" data-x="3000" data-z="10" data-rotate-x="90" data-scale="15">
+
                                 <div class="col_full center nomargin nopadding" style=" display: flex;flex-direction: column;justify-content: space-between; min-height: 50vh;background: white">
-                                    <div></div>
-                                    <div class="center divcenter row clearfix commonheight leftmargin-sm" style=" ">
-                                        <h2 class=" herotext" style="background: transparent;  font-weight: 200; text-align: left">This is the <b>Solutions</b> page. <br>Content to be added.<br><a href="#solutionoverview">Know More</a></h2>
+
+                                    <div class="center divcenter" style=" ">
+                                        <h2 class=" herotext" style="background: transparent;  font-weight: 200; text-align: left;">This is the <b>Solutions</b> page. <br>Content to be added.<br><a id="sol"href="#solutionoverview">Know More</a></h2>
                                     </div>
+
                                 </div>
+                                <div class="allmargin center" style="color:black;display: flex; padding: 3">
+
+                                        <div class="p-2 box1" style="border-left: 1px solid black;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id purus sed tortor pretium finibus. Nulla sit amet aliquet massa. Nam eget tortor at leo ultrices condimentum. Cras eu nibh ut nunc viverra luctus vel sit amet lorem. Quisque venenatis viverra blandit. Aenean quis hendrerit justo. Nunc semper eget ex et aliquet. Sed in orci elit. Donec a elit quam. Mauris a felis sollicitudin nibh tristique imperdiet. Suspendisse id ante vitae nibh posuere varius at at justo.
+                                        </div>
+                                        <div class="p-2 box1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id purus sed tortor pretium finibus. Nulla sit amet aliquet massa. Nam eget tortor at leo ultrices condimentum. Cras eu nibh ut nunc viverra luctus vel sit amet lorem. Quisque venenatis viverra blandit. Aenean quis hendrerit justo. Nunc semper eget ex et aliquet. Sed in orci elit. Donec a elit quam. Mauris a felis sollicitudin nibh tristique imperdiet. Suspendisse id ante vitae nibh posuere varius at at justo.
+                                        </div>
+                                        <div class="p-2 box1" style="border-right: 1px solid black;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id purus sed tortor pretium finibus. Nulla sit amet aliquet massa. Nam eget tortor at leo ultrices condimentum. Cras eu nibh ut nunc viverra luctus vel sit amet lorem. Quisque venenatis viverra blandit. Aenean quis hendrerit justo. Nunc semper eget ex et aliquet. Sed in orci elit. Donec a elit quam. Mauris a felis sollicitudin nibh tristique imperdiet. Suspendisse id ante vitae nibh posuere varius at at justo.
+                                        </div>
+
+                                    </div>
                             </div>
 
-                            <div id="expertiseoverview" class="step" data-x="3000" data-rotate-x="90" data-rotate-y="90" data-z="10" data-scale="3" data-exclude="true">
+                            <div id="expertiseoverview" class="step" data-x="3000" data-rotate-x="90" data-rotate-y="90" data-z="10" data-scale="8" data-exclude="true">
                                 <a href="#solutions1" class="topleft">link1</a>
                                 <a href="#solutions2" class="topright">link2</a>
                                 <a href="#solutions3" class="bottomleft">link3</a>
                                 <a href="#solutions4" class="bottomright">link4</a>
                             </div>
 
-                            <div id="expertise" class="step" data-x="3000" data-z="10" data-rotate-x="90" data-rotate-y="90" data-scale="6">
+                            <div id="expertise" class="step" data-x="3000" data-z="10" data-rotate-x="90" data-rotate-y="90" data-scale="15">
                                 <div class="col_full center nomargin nopadding" style=" display: flex;flex-direction: column;justify-content: space-between; min-height: 50vh;background: white">
                                     <div></div>
                                     <div class="center divcenter row clearfix commonheight leftmargin-sm" style=" ">
@@ -88,14 +102,14 @@
                                 </div>
                             </div>
 
-                            <div id="careeroverview" class="step" data-x="3000" data-rotate-x="90" data-rotate-y="180" data-z="10" data-scale="3" data-exclude="true">
+                            <div id="careeroverview" class="step" data-x="3000" data-rotate-x="90" data-rotate-y="180" data-z="10" data-scale="8" data-exclude="true">
                                 <a href="#solutions1" class="topleft">link1</a>
                                 <a href="#solutions2" class="topright">link2</a>
                                 <a href="#solutions3" class="bottomleft">link3</a>
                                 <a href="#solutions4" class="bottomright">link4</a>
                             </div>
 
-                            <div id="careers" class="step" data-x="3000" data-z="10" data-rotate-x="90" data-rotate-y="180" data-scale="6">
+                            <div id="careers" class="step" data-x="3000" data-z="10" data-rotate-x="90" data-rotate-y="180" data-scale="15">
                                 <div class="col_full center nomargin nopadding" style=" display: flex;flex-direction: column;justify-content: space-between; min-height: 50vh;background: white">
                                     <div></div>
                                     <div class="center divcenter row clearfix commonheight leftmargin-sm" style=" ">
@@ -104,14 +118,14 @@
                                 </div>
                             </div>
 
-                            <div id="aboutoverview" class="step" data-x="3000" data-rotate-x="90" data-rotate-y="270" data-z="10" data-scale="3" data-exclude="true">
+                            <div id="aboutoverview" class="step" data-x="3000" data-rotate-x="90" data-rotate-y="270" data-z="10" data-scale="8" data-exclude="true">
                                 <a href="#solutions1" class="topleft">link1</a>
                                 <a href="#solutions2" class="topright">link2</a>
                                 <a href="#solutions3" class="bottomleft">link3</a>
                                 <a href="#solutions4" class="bottomright">link4</a>
                             </div>
 
-                            <div id="about" class="step" data-x="3000" data-z="10" data-rotate-x="90" data-rotate-y="270" data-scale="6">
+                            <div id="about" class="step" data-x="3000" data-z="10" data-rotate-x="90" data-rotate-y="270" data-scale="15">
                                 <div class="col_full center nomargin nopadding" style=" display: flex;flex-direction: column;justify-content: space-between; min-height: 50vh;background: white">
                                     <div></div>
                                     <div class="center divcenter row clearfix commonheight leftmargin-sm" style=" ">
@@ -120,14 +134,14 @@
                                 </div>
                             </div>
 
-                            <div id="contactoverview" class="step" data-x="3000" data-rotate-x="180" data-z="10" data-scale="3" data-exclude="true">
+                            <div id="contactoverview" class="step" data-x="3000" data-rotate-x="180" data-z="10" data-scale="8" data-exclude="true">
                                 <a href="#solutions1" class="topleft">link1</a>
                                 <a href="#solutions2" class="topright">link2</a>
                                 <a href="#solutions3" class="bottomleft">link3</a>
                                 <a href="#solutions4" class="bottomright">link4</a>
                             </div>
 
-                            <div id="contact" class="step" data-x="3000" data-z="10" data-rotate-x="180" data-scale="6">
+                            <div id="contact" class="step" data-x="3000" data-z="10" data-rotate-x="180" data-scale="15">
                                 <div class="col_full center nomargin nopadding" style=" display: flex;flex-direction: column;justify-content: space-between; min-height: 50vh;background: white">
                                     <div></div>
                                     <div class="center divcenter row clearfix commonheight leftmargin-sm" style=" ">
@@ -137,22 +151,22 @@
                                 </div>
                             </div>
 
-                            <div id="solutions1" class="step" data-x="2500" data-y="-1000" data-z="-350" data-rotate-x="90" data-scale="1">
+                            <div id="solutions1" class="step" data-x="500" data-y="8000" data-z="-1150" data-rotate-x="90" data-scale="2" data-exclude="true" style="pointer-events: auto;">
                                 <b class="topleft" style="color:black">Hello
                                 </b>
                             </div>
 
-                            <div id="solutions2" class="step" data-x="4000" data-z="-350" data-y="1000" data-rotate-x="90" data-scale="1">
+                            <div id="solutions2" class="step" data-x="4500" data-z="-1150" data-y="8000" data-rotate-x="90" data-scale="2" data-exclude="true" style="pointer-events: auto;">
                                 <b class="topleft" style="color:black">Hi
                                 </b>
                             </div>
 
-                            <div id="solutions3" class="step" data-x="2000" data-y="1000" data-z="400" data-rotate-x="90" data-scale="1">
+                            <div id="solutions3" class="step" data-x="500" data-y="8000" data-z="1000" data-rotate-x="90" data-scale="2" data-exclude="true" style="pointer-events: auto;">
                                 <b class="topleft" style="color:black">How are you
                                 </b>
                             </div>
 
-                            <div id="solutions4" class="step" data-x="4000" data-y="1000" data-z="400" data-rotate-x="90" data-scale="1">
+                            <div id="solutions4" class="step" data-x="4500" data-y="8000" data-z="1000" data-rotate-x="90" data-scale="2" data-exclude="true" style="pointer-events: auto;">
                                 <b class="topleft" style="color:black">Ding
                                 </b>
                             </div>
@@ -210,4 +224,25 @@
                     });
                 });
             });
-            </script>
+            var show = document.querySelector('#sol');
+            show.addEventListener('click', function runThisOnButtonClick(event) {
+            $('#solutions1').css("opacity","1");
+            $('#solutions2').css("opacity","1");
+            $('#solutions3').css("opacity","1");
+            $('#solutions4').css("opacity","1");
+            });
+            // var hide = document.querySelector('#home','#solutions','#expertise','#contact','#about','#careers');
+            // hide.addEventListener('click', function runThisOnButtonClick(event) {
+            // $('#solutions1').css("opacity","0 !important");
+            // $('#solutions2').css("opacity","0");
+            // $('#solutions3').css("opacity","0");
+            // $('#solutions4').css("opacity","0");
+            // });
+            // setInterval(function() {
+            // if($('#simple.step-solutionoverview').length===0)
+            // {$('#solutions1').css("opacity","0")
+            // $('#solutions2').css("opacity","0")
+            // $('#solutions3').css("opacity","0")
+            // $('#solutions4').css("opacity","0")}
+            // }, 1000);
+</script>

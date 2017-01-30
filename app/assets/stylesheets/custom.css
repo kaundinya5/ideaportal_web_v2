@@ -3,6 +3,8 @@ body .secondary_cta_container, body .secondary_cta , .ip_nav li a, .ip_nav li a:
     -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
+
+
 #primary-menu ul li a {
     pointer-events: auto;
 }
