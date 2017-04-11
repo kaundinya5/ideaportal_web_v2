@@ -8,4 +8,7 @@ class WelcomeController  < ApplicationController
   def solutions
 
   end
+  def test
+
+  end
 end

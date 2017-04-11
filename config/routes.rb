@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get 'foo' => "welcome#jmpress"
   get 'solutions' => "welcome#solutions"
+  get 'test' => "welcome#test"
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
